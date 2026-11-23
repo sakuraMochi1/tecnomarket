@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUD MongoDB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">CRUD MongoDB</h1>
+    <span id="status" class="badge">conectando…</span>
+  </header>
+  <nav id="tabs"></nav>
+  <main>
+    <section class="card">
+      <h2 id="formTitle">Nuevo registro</h2>
+      <div id="form" class="form-grid"></div>
+      <div class="actions">
+        <button id="btnSave" class="primary">Guardar</button>
+        <button id="btnCancel" class="ghost" hidden>Cancelar edición</button>
+      </div>
+      <p id="msg" role="status"></p>
+    </section>
+    <section class="card">
+      <div class="toolbar">
+        <h2 id="listTitle">Registros</h2>
+        <input id="search" type="search" placeholder="Buscar…">
+      </div>
+      <div class="table-wrap"><table id="table"></table></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
